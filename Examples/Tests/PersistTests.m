@@ -10,6 +10,7 @@
 
 #import "JSONTypesModel.h"
 #import "BuiltInConversionsModel.h"
+#import "BoolTestModel.h"
 
 @interface PersistTests : XCTestCase
 @end
@@ -93,6 +94,17 @@
 		XCTAssertTrue([d isKindOfClass:[NSDictionary class]], @"toDictionary didn't return NSDictionary object");
 
 		XCTAssertTrue( [@(1) isEqualToNumber:d[@"boolFromString"]], @"boolFromString key is not equal to YES");
+}
+
+// https://github.com/jsonmodel/jsonmodel/issues/625
+- (void) testBoolToJson {
+	BoolTestModel *b = [[BoolTestModel alloc] init];
+	b.isAwesome = YES;
+	b.isTerrible = NO;
+
+	NSString *expected = @"{\"isAwesome\":true,\"isTerrible\":false}";
+	NSString *json = [b toJSONString];
+	XCTAssertEqualObjects(expected, json);
 }
 
 -(void)testCopy

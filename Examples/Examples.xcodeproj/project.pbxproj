@@ -225,6 +225,9 @@
 		931ECCC61B449E69C9F60862 /* Pods_macOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A3600BED7471EF4FB3C34D /* Pods_macOSTests.framework */; };
 		AA4DDDDDE4080D745F0D096B /* Pods_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D48E23848723BCB420F544 /* Pods_macOS.framework */; };
 		C1468B4CA8357FFE0AEB2715 /* Pods_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E225E30531704F049BE5B4C /* Pods_tvOS.framework */; };
+		DB2268B3215AF3D800E073CF /* BoolTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2268B2215AF3D800E073CF /* BoolTestModel.m */; };
+		DB2268B4215AF3D800E073CF /* BoolTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2268B2215AF3D800E073CF /* BoolTestModel.m */; };
+		DB2268B5215AF3D800E073CF /* BoolTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2268B2215AF3D800E073CF /* BoolTestModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -423,6 +426,8 @@
 		CD4BE0AB1A0D7ED88A9B68AB /* Pods-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-watchOS/Pods-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CF86137C50AC9DC5E09BAEE5 /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS/Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D1A4E88CC1575485760915E8 /* Pods-watchOS-extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watchOS-extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-watchOS-extension/Pods-watchOS-extension.release.xcconfig"; sourceTree = "<group>"; };
+		DB2268B1215AF3D800E073CF /* BoolTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoolTestModel.h; sourceTree = "<group>"; };
+		DB2268B2215AF3D800E073CF /* BoolTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoolTestModel.m; sourceTree = "<group>"; };
 		E1D48E23848723BCB420F544 /* Pods_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE84FC3D9B36E8214BE605D6 /* Pods-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-macOS/Pods-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		F37BF9082B944335670E6BC4 /* Pods_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -561,6 +566,7 @@
 		1A4BAACF1D1C7D4C0069D735 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				DB2268B1215AF3D800E073CF /* BoolTestModel.h */,
 				1A4BAA171D1C79260069D735 /* BuiltInConversionsModel.h */,
 				1A4BAA181D1C79260069D735 /* CopyrightModel.h */,
 				1A4BAA191D1C79260069D735 /* CustomPropertyModel.h */,
@@ -622,6 +628,7 @@
 				1A4BAAE91D1C7D590069D735 /* RpcRequestModel.m */,
 				1A4BAAEA1D1C7D590069D735 /* SpecialPropertyModel.m */,
 				008077BC1D81C035006A0187 /* ConcurrentReposModel.m */,
+				DB2268B2215AF3D800E073CF /* BoolTestModel.m */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -1478,6 +1485,7 @@
 				1A4BAA8E1D1C79480069D735 /* InitWithDataTests.m in Sources */,
 				1A4BAB1C1D1C7DA80069D735 /* ReposModel.m in Sources */,
 				1A4BAA881D1C79480069D735 /* BuiltInConversionsTests.m in Sources */,
+				DB2268B3215AF3D800E073CF /* BoolTestModel.m in Sources */,
 				1A4BAA961D1C79480069D735 /* SimpleDataErrorTests.m in Sources */,
 				1A4BAA991D1C79480069D735 /* SpecialValuesTests.m in Sources */,
 				1A4BAB161D1C7DA80069D735 /* NestedModel.m in Sources */,
@@ -1553,6 +1561,7 @@
 				1AF8B9181D423D5500A1AAD3 /* NullTests.m in Sources */,
 				1A4BAB2F1D1C7DA80069D735 /* ModelForUpperCaseMapper.m in Sources */,
 				1A4BAA751D1C79460069D735 /* CustomPropsTests.m in Sources */,
+				DB2268B4215AF3D800E073CF /* BoolTestModel.m in Sources */,
 				1A4BAA7F1D1C79460069D735 /* OptionalPropertiesTests.m in Sources */,
 				1AB943571D86AA3F0031E315 /* ConcurrentTests.m in Sources */,
 				1A4BAA7C1D1C79460069D735 /* JSONTypesReadTests.m in Sources */,
@@ -1587,6 +1596,7 @@
 				1A4BAA621D1C79460069D735 /* ExtremeNestingTests.m in Sources */,
 				1A4BAA661D1C79460069D735 /* InitWithDataTests.m in Sources */,
 				1A4BAB501D1C7DA90069D735 /* ReposModel.m in Sources */,
+				DB2268B5215AF3D800E073CF /* BoolTestModel.m in Sources */,
 				1A4BAA601D1C79460069D735 /* BuiltInConversionsTests.m in Sources */,
 				1A4BAA6E1D1C79460069D735 /* SimpleDataErrorTests.m in Sources */,
 				1A4BAA711D1C79460069D735 /* SpecialValuesTests.m in Sources */,
