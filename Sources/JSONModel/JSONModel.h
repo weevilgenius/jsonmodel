@@ -5,7 +5,11 @@
 
 #import <Foundation/Foundation.h>
 
+// core
+#import "JSONModelClassProperty.h"
 #import "JSONModelError.h"
+
+// transformations
 #import "JSONValueTransformer.h"
 #import "JSONKeyMapper.h"
 
